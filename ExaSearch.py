@@ -18,7 +18,7 @@ container.header("Search from #Wikipedia")
 prompt = container.chat_message("ai")
 prompt.write("What do you want to search for ?")
 user_input = container.chat_input('Enter your search query here')
-exa = Exa('a1906239-50ab-4ff0-8f18-a4a3f5fde925')
+exa = Exa('c1719248-06cb-4d7f-b62d-f3a0111c095a')
 try:
     exa_response = exa.search(
         user_input,
