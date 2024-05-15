@@ -8,5 +8,6 @@
   - Checkout the cheatsheet to get a basic understanding of how to use `Exa API` from [`here`](https://docs.exa.ai/reference/cheat-sheet)
   - Checkout the official `StreamLit` documentation from [`here`](https://docs.streamlit.io/get-started)
 ----
+- Visit the web app from [`here`](https://exa-search.streamlit.app/)
 - Fork the `repo` and experiment on it.
 - Project by [`AVidhanR`](https://linktr.ee/itsvidhanreddy)
