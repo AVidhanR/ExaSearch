@@ -5,6 +5,7 @@
   - Anf ofcourse using `Python`
 - Furthurmore
   - Get the `Exa API KEY` from [`here`](https://dashboard.exa.ai/api-keys)
+  - Checkout the cheatsheet to get a basic understanding of how to use `Exa API` from [`here`](https://docs.exa.ai/reference/cheat-sheet)
   - Checkout the official `StreamLit` documentation from [`here`](https://docs.streamlit.io/get-started)
 ----
 - Fork the `repo` and experiment on it.
