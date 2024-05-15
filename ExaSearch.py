@@ -12,6 +12,7 @@ def display_content(title, url):
                 unsafe_allow_html=True
                 )
 
+
 container = st.container()
 container.header("Search from #Wikipedia #Google")
 prompt = container.chat_message("user")
