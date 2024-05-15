@@ -1,6 +1,6 @@
 import streamlit as st
 from exa_py import Exa
-import requests
+
 
 def display_content(title, url):
     ai.markdown(f"""
@@ -9,31 +9,27 @@ def display_content(title, url):
         <h4> URL to look for more: <a href="{url}" target = "_blank">Click here</a> </h3>
     </div>
     """,
-    unsafe_allow_html=True
-    )
-
-def get_wikipedia_page_content(title):
-    base_url = "https://en.wikipedia.org/w/api.php"
-
+                unsafe_allow_html=True
+                )
 
 container = st.container()
 container.header("Search from #Wikipedia #Google")
 prompt = container.chat_message("user")
 prompt.write("Enter something")
+input = container.chat_input('Enter your search prompt here')
 exa = Exa('a1906239-50ab-4ff0-8f18-a4a3f5fde925')
 try:
-    response = exa.search(
-        container.chat_input('Enter your search prompt here'),
+    exa_response = exa.search(
+        input,
         num_results=1,
         type='keyword',
         include_domains=['https://www.wikipedia.org']
     )
 
-    if response:
+    if exa_response:
         ai = container.chat_message("ai")
-        for result in response.results:
+        for result in exa_response.results:
             display_content(result.title, result.url)
             ai.write(" ")
-
 except Exception:
     container.write("")
