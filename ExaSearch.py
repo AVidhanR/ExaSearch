@@ -14,7 +14,7 @@ def display_content(title, url):
 
 
 container = st.container()
-container.header("Search from #Wikipedia")
+container.header("Search data from #Wikipedia")
 prompt = container.chat_message("ai")
 prompt.write("What do you want to search for ?")
 user_input = container.chat_input('Enter your search query here')
