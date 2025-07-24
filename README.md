@@ -3,6 +3,19 @@
 
 - I used `exa_py` and `streamlit` packages in this project.
 
+```txt
+Directory structure:
+└── avidhanr-exasearch/
+    ├── README.md
+    ├── requirements.txt
+    └── app/
+        ├── navigation.py
+        └── pages/
+            ├── about.py
+            ├── exa_search.py
+            └── footer.py
+```
+
 - Get the `Exa API KEY` from [`here`](https://dashboard.exa.ai/api-keys)
 
 - Checkout the cheatsheet to get a basic understanding of how to use `Exa API` from [`here`](https://docs.exa.ai/reference/cheat-sheet)
